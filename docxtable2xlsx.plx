@@ -3,7 +3,7 @@ type@arg = "-t", "--type", metavar="type", default="xlsx", \
            help="output file format (default='xlsx')"
 tables@forward = "data", help="output tables"
 
-tables@pyloco = docx2text my.docx -- pydict2xlsx -t csv -o tables.csv
+tables@pyloco = docx2text _{path:arg}_ -- pydict2xlsx -t _{type:arg}_ -o tables._{type:arg}_
 
 [forward*]
 
