@@ -18,3 +18,4 @@ __doc__ = """extracts tables from Microsoft word file and save them in a Excel f
 'docxtable2xlsx' task extracts tables from Microsoft word file and
 save them in a Excel file or a CSV file.
 """
+_install_requires_ = ["docx2text", "pydict2xlsx"]
