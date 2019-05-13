@@ -1,5 +1,5 @@
 ===================================
-'docxtable2xlsx' task version 0.1.1
+'docxtable2xlsx' task version 0.1.2
 ===================================
 
 'docxtable2xlsx' task extracts tables from Microsoft word file and
