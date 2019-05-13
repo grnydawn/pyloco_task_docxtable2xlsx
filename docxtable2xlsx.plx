@@ -12,7 +12,7 @@ tables = tables[1]
 [attribute*]
 
 _name_ = "docxtable2xlsx"
-_version_ = "0.1.0"
+_version_ = "0.1.1"
 _doc_ = """extracts tables from Microsoft word file and save them in a Excel file or a CSV file
 
 'docxtable2xlsx' task extracts tables from Microsoft word file and
