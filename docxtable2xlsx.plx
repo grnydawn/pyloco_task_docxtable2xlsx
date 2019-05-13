@@ -17,5 +17,14 @@ _doc_ = """extracts tables from Microsoft word file and save them in a Excel fil
 
 'docxtable2xlsx' task extracts tables from Microsoft word file and
 save them in a Excel file or a CSV file.
+
+Examples
+--------
+
+Assuming 'my.docx' MS word file has tables in it, following command produces an Excel or
+a CSV file that contains the content of tables in 'my.docx'. ::
+
+    >>> pyloco docxtable2xlsx my.docx           # generates 'tables.xlsx'
+    >>> pyloco docxtable2xlsx my.docx -t csv    # generates 'tables.csv'
 """
 _install_requires_ = ["docx2text", "pydict2xlsx"]
