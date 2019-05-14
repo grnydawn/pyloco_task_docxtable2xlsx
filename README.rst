@@ -14,13 +14,13 @@ Run the following command if you need to install 'pyloco'. ::
     >>> pip install pyloco --user
     >>> pyloco --version
 
-.. note:: 'pip' options
+.. note::
 
     - 'pip' is a Python package manager. See `here <https://www.w3schools.com/python/python_pip.asp/>`_ for more information.
     - Add '-U' option in case to upgrade pyloco.
     - Remove '--user' option in case that pyloco is running in a virtualenv.
 
-.. note:: 'pyloco' version
+.. note::
 
     'docxtable2xlsx' task is created using pyloco version '0.0.105'.
     It is recommended to run 'docxtable2xlsx' with pyloco version '0.0.105' or higher
