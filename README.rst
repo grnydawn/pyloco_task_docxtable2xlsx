@@ -1,39 +1,43 @@
-===================================
-'docxtable2xlsx' task version 0.1.2
-===================================
+===================
+docxtable2xlsx task
+===================
+
+version: 0.1.2
+
+extracts tables from Microsoft word file and save them in a Excel file or a CSV file
 
 'docxtable2xlsx' task extracts tables from Microsoft word file and
 save them in a Excel file or a CSV file.
 
+
 Installation
 ------------
 
-Before installing 'docxtable2xlsx' task, please make sure that 'pyloco' is installed.
-Run the following command if you need to install 'pyloco'. ::
+To install docxtable2xlsx task, run the following pyloco command. ::
+
+    >>> pyloco install docxtable2xlsx.plx
+    >>> pyloco docxtable2xlsx.plx --version
+    docxtable2xlsx 0.1.2
+
+If pyloco is not available on your computer, please run the following
+command to install pyloco, and try again above task installation. ::
 
     >>> pip install pyloco --user
     >>> pyloco --version
+    pyloco 0.0.108
 
-.. note:: 'pip' options
+.. note::
 
-    - 'pip' is a Python package manager. See `here <https://www.w3schools.com/python/python_pip.asp/>`_ for more information.
-    - Add '-U' option in case to upgrade pyloco.
-    - Remove '--user' option in case that pyloco is running in a virtualenv.
-
-.. note:: 'pyloco' version
-
-    'docxtable2xlsx' task is created using pyloco version '0.0.105'.
-    It is recommended to run 'docxtable2xlsx' with pyloco version '0.0.105' or higher
-
-To install 'docxtable2xlsx' task, run the following 'pyloco' command.  ::
-
-    >>> pyloco install docxtable2xlsx
-    >>> pyloco docxtable2xlsx --version
+    - 'pip' is a Python package manager.
+    - Remove '--user' option to run pyloco on a virtual environment.
+    - Add '-U' option to 'pip' command to upgrade pyloco.
+    - We recommend to use pyloco version 0.0.108 or higher.
 
 Command-line syntax
 -------------------
 
-usage: pyloco docxtable2xlsx [-h] [-t type] [--general-arguments] data 
+usage: pyloco docxtable2xlsx.plx [-h] [-t type] [--general-arguments]
+                                 data 
 
 extracts tables from Microsoft word file and save them in a Excel file or a CSV file
 
