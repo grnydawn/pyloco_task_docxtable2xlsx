@@ -15,8 +15,8 @@ Installation
 
 To install docxtable2xlsx task, run the following pyloco command. ::
 
-    >>> pyloco install docxtable2xlsx.plx
-    >>> pyloco docxtable2xlsx.plx --version
+    >>> pyloco install docxtable2xlsx
+    >>> pyloco docxtable2xlsx --version
     docxtable2xlsx 0.1.4
 
 If pyloco is not available on your computer, please run the following
@@ -36,7 +36,7 @@ command to install pyloco, and try again above task installation. ::
 Command-line syntax
 -------------------
 
-usage: pyloco docxtable2xlsx.plx [-h] [-t type] [--general-arguments]
+usage: pyloco docxtable2xlsx [-h] [-t type] [--general-arguments]
                                  data 
 
 extracts tables from Microsoft word file and save them in a Excel file or a CSV file
