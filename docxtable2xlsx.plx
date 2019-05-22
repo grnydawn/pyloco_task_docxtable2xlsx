@@ -1,9 +1,12 @@
 path@arg = "data", type=str, help="input MS Word file"
 type@arg = "-t", "--type", metavar="type", default="xlsx", \
            help="output file format (default='xlsx')"
+encoding@arg = "-e", "--encoding", default="xlsx", default="utf-8", \
+           help="output encoding (default='utf-8')"
 tables@forward = "data", help="output tables"
 
-tables@pyloco = docx2text '__{path:arg}__' -- pydict2xlsx -t '__{type:arg}__' -o 'tables.__{type:arg}__'
+tables@pyloco = docx2text '__{path:arg}__' -- pydict2xlsx -t '__{type:arg}__' \
+                -e '__{encoding:arg}__' -o 'tables.__{type:arg}__'
 
 [forward*]
 
@@ -12,7 +15,7 @@ tables = tables[1]
 [attribute*]
 
 _name_ = "docxtable2xlsx"
-_version_ = "0.1.4"
+_version_ = "0.1.5"
 _doc_ = """extracts tables from Microsoft word file and save them in a Excel file or a CSV file
 
 'docxtable2xlsx' task extracts tables from Microsoft word file and
@@ -27,4 +30,4 @@ a CSV file that contains the content of tables in 'my.docx'. ::
     >>> pyloco docxtable2xlsx my.docx           # generates 'tables.xlsx'
     >>> pyloco docxtable2xlsx my.docx -t csv    # generates 'tables.csv'
 """
-_install_requires_ = ["docx2text", "pydict2xlsx"]
+_install_requires_ = ["docx2text", "pydict2xlsx>=0.1.4"]
