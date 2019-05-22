@@ -1,7 +1,7 @@
 path@arg = "data", type=str, help="input MS Word file"
 type@arg = "-t", "--type", metavar="type", default="xlsx", \
            help="output file format (default='xlsx')"
-encoding@arg = "-e", "--encoding", default="xlsx", default="utf-8", \
+encoding@arg = "-e", "--encoding", default="utf-8", \
            help="output encoding (default='utf-8')"
 tables@forward = "data", help="output tables"
 
